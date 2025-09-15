@@ -1,1 +1,670 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>4º grado- Unidad 2 - Evaluación común de Literatura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --accent: #4caf50;
+      --danger: #b00020;
+      --ink: #222;
+      --ink-soft: #555;
+      --paper: #fff;
+      --muted: #f3f4f6;
+    }
+    body { font-family: Verdana, sans-serif; line-height: 1.6; margin: 40px; font-size: 24px; color: var(--ink); }
+    h1, h2, h3 { text-align: center; }
+    .container { max-width: 1100px; margin: auto; }
+    .question { margin: 24px 0; padding: 16px; border-radius: 10px; background: var(--muted); }
+    .question p { margin-top: 0; }
+    .correct { background-color: #d4edda; }
+    .incorrect { background-color: #f8d7da; }
+    .feedback { font-weight: bold; margin-top: 8px; }
+
+    input[type="checkbox"], input[type="radio"] { transform: scale(1.6); margin: 6px 10px 6px 2px; }
+
+    button[type="submit"] {
+      width: 340px; height: 70px; padding: 10px 20px;
+      background-color: var(--accent); color: white; font-size: 1.25rem; margin: 30px auto; display: inline-block;
+      border: 0; border-radius: 12px; cursor: pointer; font-weight: 700;
+    }
+    button[disabled] { opacity: .6; cursor: not-allowed; }
+  
+.number-circle {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: #000; color: #fff; font-weight: 700; font-size: .95rem;
+      border-radius: 50%; width: 28px; height: 28px; margin-right: 8px;
+    }
+    
+.q2a-select {
+  font-size: 24px;
+  font-family: Verdana, sans-serif;
+  padding: 6px 10px;
+  margin: 4px 0;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  background-color: #F0F8FF
+}
+
+.q2a-mark {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.q2a-correct {
+  color: green;
+}
+
+.q2a-wrong {
+  color: red;
+}
+
+.float-image {
+  float: left;
+  width: 260px;
+  height: 200px;
+  margin: 0 0 10px 10px; /* this pushes text away */
+  border: none;
+  }
+
+.center { display: block; margin: 0 auto; width: 100%; max-width: 640px; }
+
+.gd-image iframe { pointer-events: none; border: 0; width: 100%; max-width: 640px; height: 698px; }
+.gd-image-2 iframe { pointer-events: none; border: 0; width: 100%; max-width: 640px; height: 313px; }
+.gd-image-3 iframe { pointer-events: none; border: 0; width: 100%; max-width: 640px; height: 504px; }
+
+.table.style-one { font-family: Verdana, serif; margin: 20px auto; border-collapse: collapse; width: 100%; }
+.table.style-one td { border-bottom: 1px dotted #bbb; padding: 8px 6px; }
+
+.table.style-two { font-family: Verdana, sans-serif; border-collapse: collapse; border: 1px solid black; background-color: #ffffff; width: 100%; }
+.table.style-two td { border: 1px solid #ccc; padding: 10px; }
+
+#teacherName {
+      width: 280px; height: 48px; padding: 8px; border: 1px solid #ccc; border-radius: 8px;
+      font-family: Georgia, serif; font-size: 24px; color: #333; background-color: #fcfc03;
+    }
+
+#studentName { width: 400px; height: 45px; padding: 8px; border: 1px solid #ccc; border-radius: 8px; font-family: Georgia, serif; font-size: 24px; color: #030303; background-color: #fcfc03; }
+
+hr.rounded { border: 0; height: 10px; background: linear-gradient(90deg, #bbb, #eee, #bbb); border-radius: 6px; margin: 28px 0; }
+.unanswered { border: 2px solid var(--danger); background-color: #ffe6e6; padding: 8px; border-radius: 10px; }
+
+.result-card { background: #fff; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+.result-card h3 { margin-top: 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Evaluación común de Literatura de la Unidad 2 de 4º grado</h1>
+  <h4 style="font-size: 20px; text-align:left">Estándares</h4>
+  <p style="text-align: left; font-size: 16px;"><strong>RL.4.2:</strong> Determina un tema de una historia, drama o poema a partir de detalles en el texto; resume el texto.</p>
+  <p style="text-align: left; font-size: 16px;"><strong>RL.4.4:</strong> Determina el significado de palabras y frases según se utilizan en un texto, incluyendo aquellas que aluden a personajes significativos encontrados en la mitología, cuentos exagerados y fábulas (por ejemplo, <em>hercúleo</em>).</p>
+  <p style="text-align: left; font-size: 16px;"><strong>L.4.2:</strong> Demuestra dominio de las convenciones de uso de mayúsculas, puntuación y ortografía del español estándar al escribir.</p>
+
+  <h2>Instrucciones</h2>
+  <p>Lee el texto y responde a las preguntas que siguen.</p>
+
+  <h2>Sendero a la oscuridad</h2>
+  <p style="text-align: center; font-size: 16px;"><strong>por Bradford H. Robie, <em>Highlights for Children</em> (12/12/2019, a través de Newsela)</strong></p>
+
+  <div class="gd-image"><iframe src="https://drive.google.com/file/d/1RwaTMjWZgJlkwYlmr_ajOZOVWa1KUmRV/preview" class="center" allow="autoplay"></iframe></div>
+
+  <p><span class="number-circle">1</span> Una roca tan grande como una casa. Así es como se describe en la guía Roca Gigante. Papá dijo que fue traído aquí por un glaciar hace millones de años.</p>
+  <p><span class="number-circle">2</span> Por fin iba a verlo, en raquetas de nieve, con mis tres primos mayores, mi papá y mi tío Don. Había caminado con raquetas de nieve antes, y me gustó la aventura de pasear a través de nieve profunda junto a huellas de animales salvajes. En la zona de aparcamiento, después de ponernos las raquetas de nieve, estudiamos el mapa en el quiosco de información. —Empezamos aquí —dijo papá—, por el sendero rojo. Luego giramos a la izquierda en el circuito morado. Ahí es donde está Roca Gigante.</p>
+  <p><span class="number-circle">3</span> —Recuerden mantenerse unidos, muchachos —dijo el tío Don—.</p>
+  <p><span class="number-circle">4</span> Mis primos eran rápidos, pero me las arreglé para seguir el ritmo. El sendero iba cuesta arriba junto a un muro de piedra. Era fácil de seguir porque había marcadores rojos clavados en los árboles y la nieve había sido compactada por otros excursionistas. En la cima de la colina, giramos hacia el sendero morado, que serpenteaba de un lado a otro, atravesando las colinas y barrancos. Nos acomodamos en un ritmo, con papá y todos los demás al frente y yo en la parte de atrás, crujiendo-crujiendo-crujiendo a través de la nieve.</p>
+  <p><span class="number-circle">5</span> El sol de la tarde se sentía cálido, aunque ya se estaba hundiendo más. Vi muchas huellas de animales, en su mayoría huellas de ciervos, ardillas y conejos, que reconocí de mi guía de campo. A medida que el sendero avanzaba en zigzag, mi primo Andrew dijo lo que había estado pensando: —¿Llegaremos alguna vez a Giant Rock?</p>
+  <p><span class="number-circle">6</span> —¡Realmente es tan grande como una casa!</p>
+  <p><span class="number-circle">7</span> Mi primo Aiden sonrió y se volvió hacia mí. —Luke, ¿crees que tu papá inventó la idea de Roca Gigante solo para alejarnos de la televisión por un tiempo?</p>
+  <p><span class="number-circle">8</span> Me reí. —Nunca se sabe—.</p>
+  <p><span class="number-circle">9</span> Finalmente, llegamos a la cima de una colina y vimos la enorme roca sentada sola en el bosque. —¡Realmente es tan grande como una casa!—, dijo mi primo Josh, mirando hacia arriba.</p>
+  <p><span class="number-circle">10</span> Mis primos y yo chocamos cinco y corrimos cuesta abajo hasta que nos quedamos en la base, sin aliento. De pie en la sombra gigante de la roca, noté que el sol había bajado aún más.</p>
+  <p><span class="number-circle">11</span> —Volvamos —dijo papá al cabo de unos minutos—.</p>
+  <p><span class="number-circle">12</span> Pronto estábamos de camino a casa. Estaba un poco detrás del grupo cuando noté un conjunto de huellas de animales que no reconocí. Eran difíciles de ver entre las huellas de las raquetas de nieve, así que las seguí fuera del camino para verlas más de cerca. No había marcas de garras, lo que significaba que no pertenecían a un perro o un zorro. En cambio, parecían pequeñas huellas de manos y huellas. Debe ser un mapache, pensé, haciéndolos coincidir con las huellas de mi guía.</p>
+
+  <div class="gd-image-2"><iframe src="https://drive.google.com/file/d/1KgfuOimE7crrVpGzROmJjLK_cL5r_sId/preview" class="center" allow="autoplay"></iframe></div>
+
+  <p><span class="number-circle">13</span> —¿Dónde está todo el mundo?</p>
+  <p><span class="number-circle">14</span> Levanté la vista cuando de repente me di cuenta de lo silencioso que se había puesto. Estaba totalmente solo. —¡Oye! —grité—.</p>
+  <p><span class="number-circle">15</span> Nada. Solo el sonido de mi propia respiración y el martilleo de un pájaro carpintero resonando en el bosque vacío. No podrían haber ido muy lejos, pensé, dando un paso atrás por el sendero. Los alcanzaré si me doy prisa.</p>
+  <p><span class="number-circle">16</span> Llegué a un <b><u>cruce</u></b> donde podía girar a la izquierda o seguir recto, pero ambos senderos tenían marcadores morados. El camino de la izquierda me resultaba familiar, pero cuando pasé por encima de un tronco que pensé que había visto antes, algo me decía que iba por el camino equivocado, así que invertí la dirección. Mi mente empezó a acelerarse. Pronto podría estar demasiado oscuro para saber de qué color eran los marcadores. No podía seguir mis propios pasos porque había muchas huellas de otros excursionistas.</p>
+  <p><span class="number-circle">17</span> Parecía oscurecer a cada segundo. No tenía linterna. Sin teléfono. Empecé a correr. ¿Qué pasa si no puedo encontrar el camino de regreso? Empecé a correr por el bosque presa del pánico, viendo cómo el sol desaparecía detrás de los árboles. Entonces llegué a una encrucijada. ¿En qué dirección debo girar?</p>
+  <p><span class="number-circle">18</span> Detente, me dije a mí mismo. Piensa. Volví a imaginar el mapa. Para llegar a Roca Gigante habíamos girado a la izquierda en el circuito morado. Para regresar, tuve que hacer lo contrario y girar a la derecha en el sendero rojo. Si esto no funcionaba, haría lo que siempre había oído que deberías hacer en una situación como esta: quedarte quieto y dejar que tu grupo te encuentre.</p>
+
+  <div class="gd-image-3"><iframe src="https://drive.google.com/file/d/1W1pY7hePjyL51ieDlYKVawXvA7-CrU4w/preview" class="center" allow="autoplay"></iframe></div>
+  
+  <p><span class="number-circle">19</span> Escuché voces, alguien llamando. Entonces me fijé en el muro de piedra, el sendero que corría a su lado. Esto tenía que ser correcto. Me lancé cuesta  bajo a pasos gigantescos. Y luego, la mejor vista de todas: el estacionamiento, ¡y mi familia! —grité mientras corría hacia ellos—.</p>
+  <p><span class="number-circle">20</span> —¿Lucas? ¿Estás bien?— La voz de papá era urgente. Alumbró con una linterna en mi dirección. Solo había estado perdido durante unos minutos, pero me había parecido una eternidad. Ahora todo lo que yo quería era un abrazo de oso de papá y hacer pistas para volver a casa.</p>
+
+  <div style="background-color: Gainsboro; padding: 1px 12px 16px; border-radius: 10px;">
+  <form id="quizForm">
+    <h2>Preguntas</h2>
+
+    <!-- 1a -->
+    <div class="question" data-answer="c" data-type="radio" data-name="q1a">
+      <p><strong>1a. ¿Qué frase expresa <u>mejor</u> un tema de la historia? (RL.4.2)</strong></p>
+      <label for="q1a_a"><input type="radio" name="q1a" value="a" id="q1a_a"> a) Lucas no estaba prestando atención a su grupo y se quedó atrás.</label><br>
+      <label for="q1a_b"><input type="radio" name="q1a" value="b" id="q1a_b"> b) No es sabio detenerse y mirar las cosas.</label><br>
+      <label for="q1a_c"><input type="radio" name="q1a" value="c" id="q1a_c"> c) Mantén la calma en tiempos de problemas.</label><br>
+      <label for="q1a_d"><input type="radio" name="q1a" value="d" id="q1a_d"> d) Sigue tus huellas y estarás a salvo.</label>
+    </div>
+
+    <!-- 1b -->
+    <div class="question" data-type="open" data-name="q1b">
+      <p><strong>1b. Utiliza la evidencia de la historia para explicar el tema que elegiste en la parte 1a. (RL.4.2)</strong></p>
+      <textarea style="font-size: 22px; color: #333333; font-family: Tahoma, sans-serif; width: 100%;" id="openq1b" name="q1b" rows="4" required></textarea>
+    </div>
+
+    <!-- 2a -->
+    <div class="question" data-type="order" data-name="q2a">
+      <p><strong>2a. Escribe los eventos principales del pasaje, "Sendero a la oscuridad" en el orden en el que ocurren para crear un resumen en la tabla a continuación. (R. 4.2)</strong></p>
+      <table class="table style-one">
+        <tr><td>Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.</td></tr>
+        <tr><td>Lucas vio el estacionamiento y a su familia.</td></tr>
+        <tr><td>Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.</td></tr>
+        <tr><td>Lucas se calmó e hizo un plan.</td></tr>
+        <tr><td>El grupo llegó a la roca cuando el sol comenzaba a ponerse.</td></tr>
+      </table>
+        <table class="table style-two">
+    <tr>
+      <td>1</td>
+      <td>
+        <select id="q2a1" class="q2a-select" name="q2a1" required>
+          <option value="" disabled selected>Elige…</option>
+          <option>Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.</option>
+          <option>Lucas vio el estacionamiento y a su familia.</option>
+          <option>Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.</option>
+          <option>Lucas se calmó e hizo un plan.</option>
+          <option>El grupo llegó a la roca cuando el sol comenzaba a ponerse.</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>
+        <select id="q2a2" class="q2a-select" name="q2a2" required>
+          <option value="" disabled selected>Elige…</option>
+          <option>Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.</option>
+          <option>Lucas vio el estacionamiento y a su familia.</option>
+          <option>Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.</option>
+          <option>Lucas se calmó e hizo un plan.</option>
+          <option>El grupo llegó a la roca cuando el sol comenzaba a ponerse.</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <select id="q2a3" class="q2a-select" name="q2a3" required>
+          <option value="" disabled selected>Elige…</option>
+          <option>Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.</option>
+          <option>Lucas vio el estacionamiento y a su familia.</option>
+          <option>Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.</option>
+          <option>Lucas se calmó e hizo un plan.</option>
+          <option>El grupo llegó a la roca cuando el sol comenzaba a ponerse.</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>
+        <select id="q2a4" class="q2a-select" name="q2a4" required>
+          <option value="" disabled selected>Elige…</option>
+          <option>Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.</option>
+          <option>Lucas vio el estacionamiento y a su familia.</option>
+          <option>Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.</option>
+          <option>Lucas se calmó e hizo un plan.</option>
+          <option>El grupo llegó a la roca cuando el sol comenzaba a ponerse.</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>
+        <select id="q2a5" class="q2a-select" name="q2a5" required>
+          <option value="" disabled selected>Elige…</option>
+          <option>Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.</option>
+          <option>Lucas vio el estacionamiento y a su familia.</option>
+          <option>Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.</option>
+          <option>Lucas se calmó e hizo un plan.</option>
+          <option>El grupo llegó a la roca cuando el sol comenzaba a ponerse.</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+     <div style="margin-top:10px; text-align:center;">
+  <button type="button" id="resetQ2aBtn"
+          style="padding:8px 16px; font-size:16px; border-radius:8px; border:1px solid #888; background:#eee; cursor:pointer;">
+    Reinicia
+  </button>
+</div>
+ 
+</div>
+    </div>
+
+    <!-- 2b -->
+    <div class="question" data-type="open" data-name="q2b">
+      <p><strong>2b. Elige un detalle más de la historia que creas que debería formar parte del resumen.  Escríbelo a continuación, así como el número que estaría en el resumen. (RL.4.2)</strong></p>
+      <textarea style="font-size: 22px; color: #333333; font-family: Tahoma, sans-serif; width: 100%;" id="openq2b" name="q2b" rows="4" required></textarea>
+    </div>
+
+    <!-- 3 -->
+    <div class="question" data-answer="d" data-type="radio" data-name="q3">
+      <p><strong>3. ¿Cuál de estos es el mejor resumen del pasaje, "Sendero a la oscuridad"? (RL.4.2)</strong></p>
+      <label for="q3_a"><input type="radio" name="q3" value="a" id="q3_a"> a) Lucas va con raquetas de nieve para encontrar la Roca Gigante. En el camino a Roca Gigante, Lucas ve huellas de animales que sigue fuera del camino.</label><br>
+      <label for="q3_b"><input type="radio" name="q3" value="b" id="q3_b"> b) Lucas va a esquiar con sus primos. Su padre le advierte que se quede con el grupo, pero se distrae en su camino a Roca Gigante y se separa. Lucas está aterrorizado y decide quedarse en un lugar hasta que el resto del grupo lo encuentre.</label><br>
+      <label for="q3_c"><input type="radio" name="q3" value="c" id="q3_c"> c) Lucas va de excursión con su familia. Rastrean a varios animales en el camino. Lucas se distrae cuando encuentra unas huellas de animales que nunca antes había visto. Termina perdido en el bosque hasta que su padre lo encuentra.</label><br>
+      <label for="q3_d"><input type="radio" name="q3" value="d" id="q3_d"> d) Lucas va a caminar con raquetas de nieve con su padre, tíos y primos para ver la Roca Gigante. En el camino de regreso al auto, Lucas sigue las huellas de animales fuera del camino y se da cuenta de que está solo. Mantiene la calma y hace un plan y es capaz de encontrar el camino de regreso al estacionamiento donde encuentra a su familia.</label>
+    </div>
+
+    <!-- 4a -->
+    <div class="question" data-answer="c" data-type="radio" data-name="q4a">
+      <p><strong>4a. ¿Cuál es el significado de la palabra <u>cruce</u> tal como aparece en el párrafo 16? (RL.4.4)</strong></p>
+      <label for="q4a_a"><input type="radio" name="q4a" value="a" id="q4a_a"> a) Moverse en una dirección determinada</label><br>
+      <label for="q4a_b"><input type="radio" name="q4a" value="b" id="q4a_b"> b) Para doblar una esquina</label><br>
+      <label for="q4a_c"><input type="radio" name="q4a" value="c" id="q4a_c"> c) Un punto donde las cosas se unen</label><br>
+      <label for="q4a_d"><input type="radio" name="q4a" value="d" id="q4a_d"> d) Una decisión importante</label>
+    </div>
+
+    <!-- 4b -->
+    <div class="question" data-answer="c" data-type="radio" data-name="q4b">
+      <p><strong>4b. ¿Qué detalle del texto apoya <u>mejor</u> tu respuesta a la parte 4a? (RL.4.4)</strong></p>
+      <label for="q4b_a"><input type="radio" name="q4b" value="a" id="q4b_a"> a) Algo me decía que iba por el camino equivocado.</label><br>
+      <label for="q4b_b"><input type="radio" name="q4b" value="b" id="q4b_b"> b) Había muchas huellas de otros excursionistas.</label><br>
+      <label for="q4b_c"><input type="radio" name="q4b" value="c" id="q4b_c"> c) Podría girar a la izquierda o seguir recto.</label><br>
+      <label for="q4b_d"><input type="radio" name="q4b" value="d" id="q4b_d"> d) Mi mente empezó a acelerarse.</label>
+    </div>
+
+    <hr class="rounded" />
+
+    <p style="text-align: center; font-size: 30px; color: brown;"><b>Has llegado al final de la prueba.</b></p>
+    <p style="text-align: left; font-size: 20px; color: brown;"><em>Asegúrate de:</em></p>
+    <ul style="font-size: 18px; color: brown;">
+      <li>Verificar tus respuestas antes de enviar la prueba.</li>
+      <li>Escribe tu <b>nombre y apellido</b> <u>correctamente</u>.</li>
+      <li>Elige correctamente el nombre de <u>tu</u> <b>maestra</b>.</li>
+    </ul>
+    <p style="font-size: 20px; color: brown;"><em>Cuando estés listo/a, haz clic en "Enviar".</em></p>
+
+    <hr class="rounded" />
+
+    <label>
+      <p>
+        Nombre &amp; Apellido (requeridos):
+        <input type="text" id="studentName" name="studentName" placeholder="Escribe aquí tu nombre y apellido" required aria-label="Student Name" />
+      </p>
+    </label>
+
+    <label>
+      <p>
+        Maestra (requerido):
+        <select id="teacherName" name="teacherName" required aria-label="Teacher">
+          <option value="" disabled selected>Elige a tu maestra</option>
+          <option value="Becerril">Becerril</option>
+          <option value="Cerwin">Cerwin</option>
+          <option value="Diaz">Diaz</option>
+        </select>
+      </p>
+    </label>
+
+    <div style="text-align: center;">
+      <button type="submit" id="submitBtn">Enviar</button>
+    </div>
+  </form>
+
+  <div id="result" style="margin-top:20px;"></div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const form = document.getElementById('quizForm');
+  const resultDiv = document.getElementById('result');
+  const submitBtn = document.getElementById('submitBtn');
+  let alreadySubmitted = false;
+
+  // ---- 2a choices & correct order ----
+  const Q2A_CHOICES = [
+    'Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.',
+    'Lucas vio el estacionamiento y a su familia.',
+    'Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.',
+    'Lucas se calmó e hizo un plan.',
+    'El grupo llegó a la roca cuando el sol comenzaba a ponerse.'
+  ];
+  const Q2A_CORRECT = [
+    'Papá lideraba el grupo mientras Lucas lo seguía en la retaguardia.',
+    'El grupo llegó a la roca cuando el sol comenzaba a ponerse.',
+    'Lucas vio huellas de animales que no reconoció y los siguió fuera del camino.',
+    'Lucas se calmó e hizo un plan.',
+    'Lucas vio el estacionamiento y a su familia.'
+  ];
+
+  // Utilities
+  function makeOption(text, selectedValue) {
+    const opt = document.createElement('option');
+    opt.textContent = text;
+    opt.value = text;
+    if (text === selectedValue) opt.selected = true;
+    return opt;
+  }
+  function addPromptOption(select) {
+    const opt = document.createElement('option');
+    opt.textContent = 'Elige…';
+    opt.value = '';
+    opt.disabled = true;
+    opt.selected = true;
+    select.appendChild(opt);
+  }
+  function scrollToEl(el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // Ensure each select has a trailing span for the ✓/✗ mark
+  function ensureQ2aMarkSpans(selects) {
+    selects.forEach((sel, i) => {
+      const next = sel.nextElementSibling;
+      if (!next || !next.classList.contains('q2a-mark')) {
+        const span = document.createElement('span');
+        span.className = 'q2a-mark';
+        span.id = `q2a${i+1}_mark`;
+        span.setAttribute('aria-live', 'polite');
+        sel.insertAdjacentElement('afterend', span);
+      }
+    });
+  }
+
+  // Update the ✓/✗ after submit
+  function updateQ2aMarks(results) {
+    for (let i = 1; i <= 5; i++) {
+      const mark = document.getElementById(`q2a${i}_mark`);
+      if (!mark) continue;
+      const ok = results.answers[`q2a${i}_correct`] === 'TRUE';
+      mark.textContent = ok ? ' ✓' : ' ✗';
+      mark.classList.remove('q2a-correct', 'q2a-wrong');
+      mark.classList.add(ok ? 'q2a-correct' : 'q2a-wrong');
+      // If unanswered, show nothing
+      if (!results.answers[`q2a${i}_answer`]) {
+        mark.textContent = '';
+        mark.classList.remove('q2a-correct', 'q2a-wrong');
+      }
+    }
+  }
+
+  // Clear ✓/✗ (used on reset)
+  function clearQ2aMarks() {
+    for (let i = 1; i <= 5; i++) {
+      const mark = document.getElementById(`q2a${i}_mark`);
+      if (mark) {
+        mark.textContent = '';
+        mark.classList.remove('q2a-correct', 'q2a-wrong');
+      }
+    }
+  }
+
+  // --- Initialize and enforce unique selections across the five dropdowns
+  let q2aModule = null;
+  function initOrderDropdowns() {
+    const q2a = document.querySelector('.question[data-type="order"][data-name="q2a"]');
+    if (!q2a) return null;
+
+    const selects = Array.from(q2a.querySelectorAll('.q2a-select'));
+    const selectedByIndex = selects.map(s => s.value || '');
+
+    function renderAll() {
+      const chosen = new Set(selectedByIndex.filter(Boolean));
+
+      selects.forEach((sel, idx) => {
+        const keep = selectedByIndex[idx];
+        sel.innerHTML = '';
+        addPromptOption(sel);
+
+        Q2A_CHOICES.forEach(choice => {
+          const isMine = (keep && choice === keep);
+          if (!chosen.has(choice) || isMine) {
+            sel.appendChild(makeOption(choice, keep));
+          }
+        });
+      });
+
+      // Make sure marker spans exist (once)
+      ensureQ2aMarkSpans(selects);
+    }
+
+    renderAll();
+
+    selects.forEach((sel, idx) => {
+      sel.addEventListener('change', () => {
+        selectedByIndex[idx] = sel.value || '';
+        renderAll();
+      });
+    });
+
+    return { selects, selectedByIndex, renderAll };
+  }
+
+  // Returns { score, totalAuto, percent, answers }
+  function gradeAndCollect() {
+    let score = 0;
+    let totalAuto = 0;
+    const answers = {};
+
+    document.querySelectorAll('.question')
+      .forEach(q => q.classList.remove('unanswered','correct','incorrect'));
+
+    const studentNameEl = document.getElementById('studentName');
+    const teacherNameEl = document.getElementById('teacherName');
+    if (!studentNameEl.value.trim() || !teacherNameEl.value) {
+      alert('Por favor escribe tu nombre e indica tu maestra.');
+      if (!studentNameEl.value.trim()) studentNameEl.focus(); else teacherNameEl.focus();
+      return null;
+    }
+
+    let firstUnanswered = null;
+
+    document.querySelectorAll('.question').forEach(q => {
+      const type = q.dataset.type;       // 'radio' | 'open' | 'order'
+      const name = q.dataset.name;       // e.g., 'q1a'
+      const correct = q.dataset.answer;  // for radios
+
+      if (type === 'radio') {
+        totalAuto++;
+        const chosen = q.querySelector('input[type="radio"]:checked');
+        if (!chosen) {
+          q.classList.add('unanswered');
+          if (!firstUnanswered) firstUnanswered = q;
+          answers[`${name}_answer`] = '';
+          answers[`${name}_correct`] = 'FALSE';
+        } else {
+          const isCorrect = (chosen.value === correct);
+          q.classList.add(isCorrect ? 'correct' : 'incorrect');
+          if (isCorrect) score++;
+          answers[`${name}_answer`] = chosen.value;
+          answers[`${name}_correct`] = isCorrect ? 'TRUE' : 'FALSE';
+        }
+      } else if (type === 'open') {
+        const control = q.querySelector('textarea, input[type="text"]');
+        const val = (control?.value || '').trim();
+        if (!val) {
+          q.classList.add('unanswered');
+          if (!firstUnanswered) firstUnanswered = q;
+        }
+        answers[name] = val;
+      } else if (type === 'order') {
+        // --- NEW: treat Q2a as ONE auto-graded point only if ALL five are correct ---
+        const selects = q.querySelectorAll('.q2a-select');
+        const chosen = Array.from(selects).map(s => (s.value || '').trim());
+
+        // require all 5 selected & unique
+        if (chosen.some(v => !v)) {
+          q.classList.add('unanswered');
+          if (!firstUnanswered) firstUnanswered = q;
+        }
+        const uniq = new Set(chosen.filter(Boolean));
+        if (uniq.size !== chosen.filter(Boolean).length) {
+          q.classList.add('unanswered');
+          if (!firstUnanswered) firstUnanswered = q;
+          alert('En la pregunta 2a, cada oración puede usarse sólo una vez. Ajusta tus respuestas.');
+        }
+
+        // record answers + per-position flags (for UI/Sheets)
+        let allCorrect = true;
+        for (let i = 0; i < 5; i++) {
+          const posCorrect = chosen[i] === Q2A_CORRECT[i];
+          answers[`q2a${i+1}_answer`] = chosen[i];
+          answers[`q2a${i+1}_correct`] = posCorrect ? 'TRUE' : 'FALSE';
+          if (!posCorrect) allCorrect = false;
+        }
+
+        // single scoring unit for Q2a
+        totalAuto++;
+        if (allCorrect) {
+          score++;
+          q.classList.add('correct');
+          answers['q2a_all_correct'] = 'TRUE';
+        } else {
+          q.classList.add('incorrect');
+          answers['q2a_all_correct'] = 'FALSE';
+        }
+      }
+    });
+
+    if (firstUnanswered) {
+      scrollToEl(firstUnanswered);
+      alert('Tienes que responder a todas las preguntas (incluyendo preguntas abiertas).');
+      return null;
+    }
+
+    const percent = totalAuto > 0 ? Math.round((score / totalAuto) * 100) : 0;
+    return { score, totalAuto, percent, answers };
+  }
+
+  // --- INIT ---
+  const q2aContainer = document.querySelector('.question[data-type="order"][data-name="q2a"]');
+  q2aModule = initOrderDropdowns();
+
+  // Reset 2a button
+  const resetBtn = document.getElementById('resetQ2aBtn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      const q2a = q2aContainer;
+      if (!q2a || !q2aModule) return;
+
+      q2aModule.selectedByIndex.forEach((_, i) => q2aModule.selectedByIndex[i] = '');
+      q2aModule.selects.forEach(sel => { sel.value = ''; });
+      q2aModule.renderAll();
+      q2a.classList.remove('unanswered', 'correct', 'incorrect');
+      clearQ2aMarks(); // clear ✓/✗ on reset
+    });
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (alreadySubmitted) return;
+
+    const results = gradeAndCollect();
+    if (!results) return;
+
+    alreadySubmitted = true;
+    submitBtn.disabled = true;
+
+    // Update inline ✓/✗ for 2a
+    updateQ2aMarks(results);
+
+    const studentName = document.getElementById('studentName').value.trim();
+    const teacherName = document.getElementById('teacherName').value;
+
+    const q2aCorrectCount = ['q2a1_correct','q2a2_correct','q2a3_correct','q2a4_correct','q2a5_correct']
+      .reduce((n,k)=> n + (results.answers[k]==='TRUE' ? 1 : 0), 0);
+
+    // Render result card
+    resultDiv.innerHTML = `
+      <div class="result-card">
+        <h3>Reporte</h3>
+        <p><strong>Nombre:</strong> ${studentName} &nbsp; | &nbsp; <strong>Maestra:</strong> ${teacherName}</p>
+        <p><strong>Calificación automatizada:</strong> ${results.score} / ${results.totalAuto} &nbsp; (<strong>${results.percent}%</strong>)</p>
+        <details>
+          <summary><strong>Respuestas abiertas</strong> (las revisará tu maestra)</summary>
+          <ul>
+            <li><strong>1b:</strong> ${results.answers['q1b'] || '<em>—</em>'}</li>
+            <li><strong>Puntaje en 2a:</strong> ${q2aCorrectCount} / 5</li>
+            <li><strong>2a (secuencia):</strong> [${results.answers['q2a1_answer'] || '—'}; ${results.answers['q2a2_answer'] || '—'}; ${results.answers['q2a3_answer'] || '—'}; ${results.answers['q2a4_answer'] || '—'}; ${results.answers['q2a5_answer'] || '—'}]</li>
+            <li><strong>2b:</strong> ${results.answers['q2b'] || '<em>—</em>'}</li>
+          </ul>
+        </details>
+        <p style="color:${results.percent>=70?'#256f2a':'#8a1a1a'}"><em>${results.percent>=70?'Notable o sobresaliente en preguntas calificadas automáticamente':'Necesita mejorar en respuestas calificadas automáticamente'}</em></p>
+      </div>
+    `;
+
+    // ---------- SEND TO GOOGLE APPS SCRIPT (form-encoded) ----------
+    const payload = {
+      Timestamp: new Date().toISOString(),
+      studentName,
+      teacherName,
+      score: results.score,
+      percent: results.percent,
+
+      // MC answers + correctness
+      q1a_answer: results.answers['q1a_answer'] || '',
+      q1a_correct: results.answers['q1a_correct'] || '',
+      q3_answer:  results.answers['q3_answer']  || '',
+      q3_correct: results.answers['q3_correct'] || '',
+      q4a_answer: results.answers['q4a_answer'] || '',
+      q4a_correct: results.answers['q4a_correct'] || '',
+      q4b_answer: results.answers['q4b_answer'] || '',
+      q4b_correct: results.answers['q4b_correct'] || '',
+
+      // Ordered answers (+ correctness flags) + single-point flag
+      q2a1_answer: results.answers['q2a1_answer'] || '',
+      q2a1_correct: results.answers['q2a1_correct'] || '',
+      q2a2_answer: results.answers['q2a2_answer'] || '',
+      q2a2_correct: results.answers['q2a2_correct'] || '',
+      q2a3_answer: results.answers['q2a3_answer'] || '',
+      q2a3_correct: results.answers['q2a3_correct'] || '',
+      q2a4_answer: results.answers['q2a4_answer'] || '',
+      q2a4_correct: results.answers['q2a4_correct'] || '',
+      q2a5_answer: results.answers['q2a5_answer'] || '',
+      q2a5_correct: results.answers['q2a5_correct'] || '',
+      q2a_all_correct: results.answers['q2a_all_correct'] || '',
+
+      // Other open response
+      q1b: results.answers['q1b'] || '',
+      q2b: results.answers['q2b'] || ''
+    };
+
+    const formBody = Object.keys(payload)
+      .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(payload[k]))
+      .join('&');
+
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.textContent = 'Enviando…';
+
+    try {
+      const res = await fetch(
+        "https://script.google.com/macros/s/AKfycby6Pcm1dbDSeCjub2RKzDJrqXvifsnJYqED1-gtLV9NH4wBLFGCr8-EPm1G1kvZtHw/exec",
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: formBody
+        }
+      );
+      const text = await res.text();
+      console.log('Server response:', text);
+      submitBtn.textContent = 'Enviado ✓';
+    } catch (err) {
+      console.error(err);
+      alert('Hubo un error al enviar tu prueba. Inténtalo de nuevo.');
+      alreadySubmitted = false;
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalBtnText;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
